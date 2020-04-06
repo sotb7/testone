@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen Alumni Clase 1 HTML 5</title>
+    <style>
+        p {
+            font-family:"Verdana", sans-serif;
+            color: blueviolet;
+            font-size: 14px;
+        }
+        p.uno {
+            font-family:"Verdana", sans-serif;
+            color:rgb(236, 61, 134);            
+            font-size: 14px;
+        }
+        p.dos {
+            font-family:"Verdana", sans-serif;
+            color:rgb(16, 145, 33);            
+            font-size: 14px;
+        }
+        p.line{
+            background-color:black;
+            color:pink;
+            width: 600px;
+            border-style:solid;
+            text-align:justify;
+            line-height: 30px;
+            padding: 1em;
+            border:1em dotted chartreuse;
+        }
+
+        h1{
+            background-color:black;
+            color:aquamarine;
+            width: 600px;
+            border-style: dashed;
+            border-color: chartreuse;
+            padding: 0.5em;
+        }
+        h2{
+            background-color:black;
+            color:fuchsia;
+            width: 400px;
+            border-style:groove;
+            border-color: chartreuse;
+            padding: 0.5em;
+        }
+        h3{
+            background-color:green;
+            color:aqua;
+            width: 200px;
+            border-style:dotted;
+            border-color: chartreuse;
+            padding: 0.5em;
+        }
+        ul{
+            color:rgb(189, 46, 46);
+        }
+    </style>
+</head>
+<body>
+<h1>HTML creado por Tim Berners Lee 1991</h1>
+
+<p>Versiones más importantes:</p>
+<p>HTML 4.01 <br>
+XHTML 1.0 <br>
+HTML5 (la actual desde 2014)<br><br><br></p>
+
+<p class="uno">W3C (World Wide Web Consortium) www.w3.org<br><br>
+
+Fundada por Tim Berners Lee, fija los standards de Lenguajes como HTML y XML <br><br>
+
+Actualmente la WHATWG (Web hypertext application team working group www.whatwg.org) también participa en la fijación de standards<br><br>
+
+W3C y WHATWG trabajaron en forma conjunta en la creación de la última versión, HTML5<br><br><br>
+
+Para poder ver mi HTML necesito un navegador (Chrome, Safari, Opera, Edge, Firefox) y un Servidor, donde voy a subir mis archivos para poder verlos desde la Web.<br><br><br></p>
+
+<p class="dos">La Web (www) es un conjunto de protocolos de internet que permite, de forma sencilla, la consulta remota de archivos.<br><br><br>
+
+EMMET es un paquete que se instala en los editores de texto para simplificar la tarea<br><br><br></p>
+
+<h1>ELEMENTO</h1>
+<p class="uno">Los Elementos conforman el lenguaje HTML<br>
+Están formados por una etiqueta de apertura y una etiqueta de cierre. Ejemplo: < h1 > contenido < /h1 ><br><br>
+Algunos elementos no tienen contenido por lo tanto están conformados por sólo una etiqueta. Ejemplo: < br > es el elemento line break (realiza un salto de renglón)<br><br><br>
+
+Lo primero que se escribe al comenzar un archivo HTML es el doctype que es también llamado declaración de tipo de documento. Le dice a los navegadores con que versión de HTML vamos a trabajar.<br>
+El doctype es obligatorio y fundamental, para que la interpretación de las etiquetas que trabajamos dentro de nuestro documento sea correcta.<br>
+El doctype en HTML 5 es:<br><br>
+
+< !doctype html > como las etiquetas en HTML5 no son case sensitive, se podría escribir Doctype o DOCTYPE y funcionaría igualmente <br><br>
+
+Después de la declaración del doctype, van los siguientes elementos:<br><br>
+
+< html > <br><br>
+
+< head > anidados entre apertura y cierre de la etiqueta html colocamos un segundo elemento llamado head. En el head va la información que brindamos a los motores de búsqueda y al navegador, como también las vinculaciones a CSS y/o Javascript<br><br>
+
+< title > anidado dentro del elemento head va el elemento title que muestra aquello que va en el tab o pestaña del navegador<br><br>
+
+< /title > <br><br>
+
+< /head > <br><br>
+
+< body > es el elemento que va después del head y es donde vamos a colocar todos los elementos que son visibles de nuestro sitio web. Texto, immágenes, tablas<br><br>
+
+< /body ><br><br>
+
+< /html > <br><br>
+
+Se puede prescindir de escribir elementos en nuestro archivo HTML, como por ejemplo body y head, y escribir sólo title por ejemplo, es váido y el navegador interpreta el HTML sin tener todos los elementos, pero no es recomendable (porque más adelante cuando incluyamos librerías de javascript para poder hacer que ciertos elementos sean visibles en versiones antiguas por ejemplo de internet explorer, si no tenemos esos elementos las librerías no van a funcionar)<br><br><br></p>
+
+<h1>Atributos y Valores</h1> <br><br>
+<p>Los atributos básicamente brindan información adicional sobre los elementos de HTML, es decir que cuentan un poco más sobre los elementos con los cuales uno trabaja.<br><br>
+
+Todos los elementos de HTML pueden tener atributos. <br>
+Hay atributos a su vez, que se pueden aplicar a cualquier elemento de HTML, por ejemplo los atributos title, style, ID y class son atributos que se pueden aplicar en cualquier elemento de HTML<br>
+
+En general se los va a encontrar de la siguiente manera:<br>
+Vas a tener la etiqueta de apertura donde va a estar el < nombre del atributo ="valor del atributo". El valor depende del atributo con el cual estés trabajando. Siempre los atributos están en la etiqueta de apertura.<br><br></p>
+
+<ul type="circle">  <li>Item 1</li> 
+                    <li type="square">Item 2</li>
+                    <li type="none">Item 3</li>
+                    <li type="disc">Item 4</li> 
+</ul>
+<br><br><br>
+<p class="line"> "disc" es un atributo por defecto, esto quiere decir que si no se indica atributo del elemento lista, por defecto va a hacer el puntito de "disc" </p>
+<br>
+<p class="uno">Como siempre lo más específico sobreescribe lo más general, vemos como  en el ejemplo de esta lista de arriba pasa lo que se ve abajo, el square prepondera sobre el circle porque está escrito directamente en la línea y es más importante que el circle<br><br>
+
+< ul type="circle"> <br>
+    < li >Item 1< /li > <br>
+    < li type="square" >Item 2< /li ><br>
+< /ul >
+<br><br><br>
+
+En las listas ordenadas, como vimos, también existe el mismo atributo, lo que varían son los Valores, en listas desordenadas se usan los valores circle, square y en las listas ordenadas 1, a, A, I, i</p>
+
+<br><br><br>
+<h2>Atributos y Valores 2</h2>
+<h3>Meta</h3>
+<p> Provee información adicional para el documento. Ya sea para el propio navegador como para el robot de búsqueda. </p>
+    
+<p>El contenido de "meta" no es visible desde el navegador.</p>
+
+<p>Entre los más importantes se encuentran el meta charset y el meta description (en otro momento fueron muy usados meta keywords o meta autor).</p>
+
+<p>También hay meta como el viewport relacionados con el diseño responsivo, y la adaptabilidad de la página al ancho de diferentes dispositivos que uso para ver la página.</p>
+
+<p>En el meta description se ponen las cosas que van a aparecer en el buscador debajo del nombre de nuestra página </p>
+<p> < meta charset="iso-8859-1!" > El iso-8859-1 es el que contiene los caractéres de los idiomas Español, Portugués y Francés </p>
+
+    <h1>Enunciados o Encabezados</h1>
+
+<p>Los enunciados tienen el elemento "h" (header) y van del h1 al h6 (va decreciendo el valor de importancia).</p>
+
+<p>No se usan por el styling, sino por la semántica, ya que los robots de búsqueda les van a prestar atención en orden de h1 a h6.</p>
+
+<p>Los títulos van a tener diferente importancia de acuerdo a la sección, pero los elementos "h" no se utilizan para subtítulos (la W3C no lo recomienda por el valor semámtico) </p>
+
+<p>Nada dentro del HTML debe ir sin formato, hay que colocarlos siempre dentro de un elemento (ejemplos: p que es el paragraph, h header). No es necesario usar todos los niveles de h</p>
+
+<p>UTF8 with BOM: cuando no detectó caractéres y en la página salió cualquier cosa, en el SUBLIME TEXT va a FILE -- SAVE WITH ENCODING -- UTF8 with BOM (en el Visual Studio Code no se como sería esto porque no figura Save with encoding)</p>
+
+<h2>ELEMENTOS DE FORMATO</h2>
+<h3>Elementos de Línea y de Bloque</h3>
+<p>Sirven para destacar cierto contenido pero a la vez tienen un fin semántico. Y se pueden anidar dentro de otros elementos como p o h por ejemplo, debido a que son elementos de línea, y por este motivo van anidados dentro de elementos de bloque y no puede darse al reves (un elemento de bloque no va anidado dentro de un elemento de línea como strong o los demás)</p>
+
+<p>Ejemplos: etiqueta < strong > <strong> DESTACA EL CONTENIDO ESTE; LO RESALTA COMO NEGRITA PERO TIENE UN FIN SEMANTICO A DIFERENCIA DE BOLD </strong>< /strong> </p>
+
+<p>Otro ejemplo es el elemento de formato < em > <em> (emphasis) Que hace cursiva lo que está acá adentro de estas etiquetas; pero también tiene un fin semántico </em>< /em > </p>
+
+<p>Hay otros elementos que tienen este tipo de styling, como son las etiquetas < b > <b> que harían lo de acá adentro bold </b>< /b > y la < i > <i> y lo de acá adentro italic </i>< /i >  pero la diferencia con strong y em es que b e i no tienen un fin semántico</p>
+
+<p>Los elementos de línea, conviven en la misma línea que otros elementos sin ningún problema, en cambio los elementos de bloque siempre se ubican uno debajo de otro</p>
+
+<p>Los elementos de bloque son los párrafos y los enunciados</p>
+
+<p>Los elemntos de línea son los elementos strong, em, b e i</p>
+
+<p>Tampoco puede anidarse un párrafo dentro de otro párrafo ni un enunciado dentro de otro enunciado, ni un párrafo dentro de un enunciado, ni un enunciado dentro de un párrafo</p>
+
+<p>Hay excepcciones a la regla en las que veremos más adelante, en los que hay ciertos elementos que estructuralemnte tienen a su vez otros elementos de bloque anidados siendo los elementos padre (los elementos contenedores) también de bloque</p>
+<br><br><br>
+
+<h1>Listas</h1>
+<h2>Lista desordenada</h2>
+<ul type="circle">
+    <li>
+        item 1
+    </li>
+    <li>
+        item 2
+    </li>
+    <li>
+        item 3
+    </li>
+    <li>
+        item 4
+    </li>
+    <li>
+        item 5
+    </li>
+</ul>
+
+<h2>Lista ordenada</h2>
+<ol type="I">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ol>
+
+<br><br><br>
+<h1>CSS (Cascading Style Sheet)</h1>
+<p>Es una hoja de estilo en cascada, la definición viene dada de como este lenguaje va dando estilo a los elementos del HTML. Es por lo tanto un complemento de HTML, que va a decir como se van a visualizar los elementos que creamos en HTML</p>
+<p>CSS trabaja de forma interna, externa como en línea; es decir que hay 3 formas de implementar CSS en HTML</p>
+<h2>CSS EXTERNO</h2>
+<p class="line">El CSS externo puede utilizarse para afectar a todo el sitio web</p>
+<p>Se hace a través de un archivo externo de <b>CSS</b> y se trabaja a través de un elemento <b>link</b>, el cual tiene el atributo <b>rel</b> cuyo valor es "stylesheet" el atributo <b>type</b> cuyo valor es "text/css" y el atributo <b>href</b> cuyo valor es la ruta donde está guardado el archivo CSS "theme.css"(en el ejemplo que vemos que es <b> < link rel="stylesheet" type="text/css" href="theme.css" ></b></p>
+<p>El elemento <b>link</b> siempre va en el <b>head</b> del <b>HTML</b></p>
+<p class="line">En HTML5 se puede omitir el atributo type</p><br><br>
+<h2>CSS INTERNO</h2>
+<p>Tiene las etiquetas <b>style</b> dentro del head</p>
+<p class="line">El CSS interno afecta sólo al archivo en el cual me encuentro (en el que escribimos las instrucciones CSS)</p>
+
+<h2>CSS INLINE o EN LINEA</h2>
+<p>Se usa en la línea directamente con el atributo <b>style</b> que tiene una propiedad y un valor</p>
+<p>Sólo afecta a la etiqueta en la cual se encuentra</p>
+<br><br>
+
+<h1>FUENTES</h1>
+<p>Las fuentes seguras o de sistema, son las que vienen predeterminadas en los sistemas operativos más populares, mientras que las fuentes de fantasía se pueden trabajar en CSS3 con la regla add font face. Pero inicialmente debemos contar con que el usuario tenga la fuente en su computadora. Una fuente segura es Arial. Es indistinto que esté escrita en mayúsculas o minúsculas. Igual es recomendable hacer un camino de fuentes.</p>
+<p>Lo siguiente es un camino de fuentes, primero trata de usar la primer tipografía, luego la siguiente y la familia que puse al final como sans-serif "font-family: arial, 'Arial black', sans-serif" prestar atención que los nombres de tipografías compuestos se escriben con comillas simples</p>
+<p>Si trabajamos sobre un elemento contenedor, como el <b>body</b>, que contiene todo lo que es visible en la página web, vamos a notar que si modificamos la tipografía la va a cambiar en todo el sitio web. Salvo en algún elemento que tenga indicada otra tipografía, como por ejemplo  h1 style=font-family: verdana;> /h1 >
+</p>
+<p class="line"> En CSS tenemos lo que se llama Ley de Herencia. En vez de escribir múltiples veces la tipografía, la escribo en un elemento contenedor y los elementos que están dentro la van a heredar. Pero si a uno de esos elementos, que potencialmente heredarían la letra que fijé en el elemento contenedor, les hago una modificación inline y esto sobre escribiría el valor heredado y va a adquirir el valor modificado</p>
+
+
+</body>
+</html>
